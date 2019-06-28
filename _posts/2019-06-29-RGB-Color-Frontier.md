@@ -33,7 +33,7 @@ Como hemos explicado más arriba cada color RGB puede representarse a través de
 
 Podemos definir la distancia euclídea entre dos colores de la siguiente manera:
 
-Sean $C_1 = (R_1, G_1, B_1)$ y $C_2 = (R_2, G_2, B_2)$ dos colores. Se define la distancia euclídea entre $C_1$ y $C_2$ como:
+Sean *C_1 = (R_1, G_1, B_1)$ y $C_2 = (R_2, G_2, B_2)* dos colores. Se define la distancia euclídea entre $C_1$ y $C_2$ como:
 
 $$
 d(C_1, C_2) = \sqrt{(R_1 - R_2)^2 + (R_1 - R_2)^2 + (R_1 - R_2)^2}
