@@ -79,15 +79,17 @@ A mi criterio personal, los colores en la esfera de radios superiores a 150 ya p
 Terminemos el post comentando el código que utilicé para realizar la esfera de la animación.
 
 Hay múltiples maneras de representar una esfera de radio r en el espacio tridimensional, pero en este caso utilizaremos una parametrización que nos hará las cosas muy sencillas. Podemos definir cada punto de la esfera como:
+
 $$
 x = x_0 + r\cos\theta\sin\varphi\\
 y = y_0 + r\sin\theta\sin\varphi\\
 z = z_0 + r\cos\varphi
 $$
+
 Donde el centro de la esfera es 
 $$(x_0, y_0, z_0)$$
 
-Y los ángulos toman los siguientes valores:
+Y los ángulos toman los valores:
 $$\theta \in [0, 2\pi], \varphi \in [0, \pi]$$
 
 Intentemos pasar esto a código Python:
