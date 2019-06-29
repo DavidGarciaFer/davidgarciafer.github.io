@@ -8,18 +8,25 @@ Hace unos días, trabajando en un proyecto de **procesamiento de imágenes** en 
 
 -----
 ### Una nota sobre el modelo de color RGB
-<span style="color:#CCCCCC">
-RGB *(Red, green and blue)* es un modo de codificar un color a través de la cantidad o intensidad de los colores primarios de la luz, estos son, rojo, verde y azul.
+
+GB *(Red, green and blue)* es un modo de codificar un color a través de la cantidad o intensidad de los colores primarios de la luz, estos son, rojo, verde y azul.
 
 La intensidad de cada color se puede codificar de diferentes maneras, por ejemplo, la intensidad de cada una de las componentes puede medirse entre 0 y 255. Es usual
 representar estas cantidades en base hexadecimal (0x00 y 0xFF respectivamente).
-</span>
 
 Ejemplos:
-- <span style="color:#FF0000"> Rojo </span> = (255, 0, 0) = #FF0000
-- <span style="color:#00FF00"> Verde </span> = (0, 255, 255) = #00FF00
-- <span style="color:#0000FF"> Azul </span> = (0, 0, 255) = #0000FF
-- <span style="color:#000000"> Negro </span> = (0, 0, 0) = #000000
+|   Color  |  Código entero  | Código hexadecimal | 
+|:--------:|:---------------:|:------------------:|
+| <span style="color:#000000">Negro</span>  |    (0, 0, 0)    |       #000000      |           
+|   <span style="color:#FF0000">Rojo</span>   |   (255, 0, 0)   |       #FF0000      |           
+|   Verde  |   (0, 255, 0)   |       #00FF00      |           
+|   Azul   |   (0, 0, 255)   |       #0000FF      |           
+|  Naranja |  (255, 128, 0)  |       #FF8000      |           
+| Amarillo |  (255, 255, 0)  |       #FFFF00      |           
+|  Marrón  |  (153, 76, 00)  |       #994C00      |           
+|  Morado  |  (153, 0, 153)  |       #990099      |           
+|   Gris   | (204, 204, 204) |       #CCCCCC      |           
+|  Blanco  | (255, 255, 255) |       #FFFFFF      |           
 
 -----
 
@@ -39,7 +46,7 @@ Como hemos explicado más arriba cada color RGB puede representarse a través de
 
 ----
 ### Distancia entre dos colores
-<span style="color:#CCCCCC">
+
 Podemos definir la distancia euclídea entre dos colores de la siguiente manera:
 
 $$
@@ -52,7 +59,6 @@ C_i = (R_i, G_i, B_i)
 $$
 
 Es decir, la longitud del segmento rectilíneo que los une.
-</span>
 
 -----
 
@@ -82,8 +88,9 @@ A mi criterio personal, los colores en la esfera de radios superiores a 150 ya p
 Terminemos el post comentando el código que utilicé para realizar la esfera de la animación.
 
 ----
+
 ### Fundamentos
-<span style="color:#CCCCCC">
+</span>
 Hay múltiples maneras de representar una esfera de radio r en el espacio tridimensional, pero en este caso utilizaremos una parametrización que nos hará las cosas muy sencillas. Podemos definir cada punto de la esfera como:
 
 $$
@@ -101,7 +108,6 @@ $$
 $$
 , y el parámetro 
 $$\varphi \in [0, \pi]$$
-</span>
 
 -----
 
