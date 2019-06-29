@@ -19,13 +19,13 @@ Ejemplos:
 |:--------:|:---------------:|:------------------:|
 | <span style="color:#000000">Negro</span>  |    (0, 0, 0)    |       #000000      |           
 |   <span style="color:#FF0000">Rojo</span>   |   (255, 0, 0)   |       #FF0000      |           
-|   Verde  |   (0, 255, 0)   |       #00FF00      |           
-|   Azul   |   (0, 0, 255)   |       #0000FF      |           
-|  Naranja |  (255, 128, 0)  |       #FF8000      |           
-| Amarillo |  (255, 255, 0)  |       #FFFF00      |           
-|  Marrón  |  (153, 76, 00)  |       #994C00      |           
-|  Morado  |  (153, 0, 153)  |       #990099      |           
-|   Gris   | (204, 204, 204) |       #CCCCCC      |           
+|   <span style="color:#00FF00">Verde</span>  |   (0, 255, 0)   |       #00FF00      |           
+|   <span style="color:#0000FF">Azul</span>   |   (0, 0, 255)   |       #0000FF      |           
+|  <span style="color:#FF8000">Naranja</span> |  (255, 128, 0)  |       #FF8000      |           
+| <span style="color:#FFFF00">Amarillo</span> |  (255, 255, 0)  |       #FFFF00      |           
+|  <span style="color:#994C00">Marrón</span>  |  (153, 76, 00)  |       #994C00      |           
+|  <span style="color:#990099">Morado</span>  |  (153, 0, 153)  |       #990099      |           
+|   <span style="color:#CCCCCC">Gris</span>   | (204, 204, 204) |       #CCCCCC      |           
 |  Blanco  | (255, 255, 255) |       #FFFFFF      |           
 
 -----
