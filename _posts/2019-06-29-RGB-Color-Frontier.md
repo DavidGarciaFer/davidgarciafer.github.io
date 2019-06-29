@@ -86,10 +86,10 @@ y = y_0 + r\sin\theta\sin\varphi\\
 z = z_0 + r\cos\varphi
 $$
 
-Donde el centro de la esfera es 
+- El centro de la esfera es 
 $$(x_0, y_0, z_0)$$
 
-Y los ángulos toman los valores:
+- Los ángulos toman los valores:
 $$\theta \in [0, 2\pi], \varphi \in [0, \pi]$$
 
 Intentemos pasar esto a código Python:
