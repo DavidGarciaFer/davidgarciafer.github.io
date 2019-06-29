@@ -15,6 +15,7 @@ La intensidad de cada color se puede codificar de diferentes maneras, por ejempl
 representar estas cantidades en base hexadecimal (0x00 y 0xFF respectivamente).
 
 Ejemplos:
+
 |   Color  |  Código entero  | Código hexadecimal | 
 |:--------:|:---------------:|:------------------:|
 | <span style="color:#000000">Negro</span>  |    (0, 0, 0)    |       #000000      |           
