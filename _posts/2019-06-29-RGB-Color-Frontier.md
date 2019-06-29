@@ -89,7 +89,11 @@ $$
 - El centro de la esfera es 
 $$(x_0, y_0, z_0)$$
 
-- Los ángulos toman los valores:
-$$\theta \in [0, 2\pi], \varphi \in [0, \pi]$$
+- Además, el parámetro
+$$
+\theta \in [0, 2\pi]
+$$
+, y el parámetro 
+$$\varphi \in [0, \pi]$$
 
 Intentemos pasar esto a código Python:
