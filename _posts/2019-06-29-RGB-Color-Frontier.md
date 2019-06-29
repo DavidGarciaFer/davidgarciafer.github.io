@@ -11,11 +11,14 @@ Hace unos días, trabajando en un proyecto de **procesamiento de imágenes** en 
 
 RGB (Red, green and blue) es un modo de codificar un color a través de la cantidad o intensidad de los colores primarios de la luz, estos son, rojo, verde y azul.
 
-La cantidad de cada color se puede codificar de diferentes maneras, por ejemplo, la intensidad de cada componente puede medirse entre 0 y 255. Es usual
+La intensidad de cada color se puede codificar de diferentes maneras, por ejemplo, la intensidad de cada una de las componentes puede medirse entre 0 y 255. Es usual
 representar estas cantidades en base hexadecimal (0x00 y 0xFF respectivamente).
 
 Ejemplos:
-
+- <span style="color:#FF0000"> Rojo </span> = (255, 0, 0) = #FF0000
+- <span style="color:#00FF00"> Verde </span> = (0, 255, 255) = #00FF00
+- <span style="color:#0000FF"> Azul </span> = (0, 0, 255) = #0000FF
+- <span style="color:#000000"> Negro </span> = (0, 0, 0) = #000000
 ------
 
 ## Una primera aproximación al problema
@@ -24,7 +27,7 @@ Es razonable afirmar que los colores que tengan una cantidad elevada de rojo pue
 
 ![RGB Colors, R = 255](/assets/r255.png)
 
-Podemos observar que, a medida que añadimos más cantidad de azul (eje vertical) y de verde (eje horizontal) obtenemos colores muy extremos, como el amarillo o incluso el blanco, los cuales es posible que no nos interese considerar como rojos. 
+Como vemos, a medida que añadimos más cantidad de azul (eje vertical) y de verde (eje horizontal) obtenemos colores muy extremos, como el amarillo o incluso el blanco, los cuales es posible que no nos interese considerar como rojos. 
 
 Por esta razón es necesario explorar otras soluciones.
 
@@ -49,3 +52,12 @@ $$
 Es decir, la longitud del segmento rectilíneo que los une.
 
 -----
+
+```
+#import <stdio.h>
+
+int main() {
+    printf("Hello World!\n");
+    return 0;
+}
+```
