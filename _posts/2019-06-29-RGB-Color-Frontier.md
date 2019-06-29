@@ -9,7 +9,7 @@ Hace unos días, trabajando en un proyecto de **procesamiento de imágenes** en 
 ------
 ### Una nota sobre el modelo de color RGB
 
-RGB (Red, green and blue) es un modo de codificar un color a través de la cantidad o intensidad de los colores primarios de la luz, estos son, rojo, verde y azul.
+RGB *(Red, green and blue)* es un modo de codificar un color a través de la cantidad o intensidad de los colores primarios de la luz, estos son, rojo, verde y azul.
 
 La intensidad de cada color se puede codificar de diferentes maneras, por ejemplo, la intensidad de cada una de las componentes puede medirse entre 0 y 255. Es usual
 representar estas cantidades en base hexadecimal (0x00 y 0xFF respectivamente).
@@ -33,7 +33,7 @@ Por esta razón es necesario explorar otras soluciones.
 
 ## La "frontera de colores"
 
-Como hemos explicado más arriba cada color RGB puede representarse a través de tres componentes básicas. Por esta razón el espacio de colores RGB es un espacio vectorial tridimensional, con base cada una de sus compoentes rojo, verde y azul. 
+Como hemos explicado más arriba cada color RGB puede representarse a través de tres componentes básicas. Por esta razón el espacio de colores RGB es un espacio vectorial tridimensional, con base cada una de sus compoentes rojo, verde y azul. En consecuencia podemos definir la distancia euclídea entre dos colores como lo hacemos usualmente.
 
 ----
 ### Distancia entre dos colores
@@ -53,11 +53,41 @@ Es decir, la longitud del segmento rectilíneo que los une.
 
 -----
 
-```
-#import <stdio.h>
+Una vez tenemos una distancia es razonable pensar que un color RGB será "parecido" al rojo en caso de que su distancia al rojo puro (255, 0, 0) sea pequeña.
 
-int main() {
-    printf("Hello World!\n");
-    return 0;
-}
-```
+Es aquí donde entra en juego la idea que me lleva realizar este post. Sería interesante visualizar, para un color dado, qué colores se encuentran a una distancia *r* fija. Estos colores son los que se encuentran en la superficie de la esfera de centro el color dado y como radio la distancia deseada *r*.
+
+## Visualización
+
+En este ejemplo concreto tomaremos como centro de la esfera el color rojo puro (255, 0, 0) e iremos variando el valor del radio para observar las diferentes fronteras de colores para intentar determinar visualmente a partir de qué distancia aparecen colores que a nuestro propio criterio ya no consideramos rojos. Para ello, podemos representar cada punto del espacio como el propio color que codifica.
+
+![RGB Color Frontier](/assets/color_frontier_rgb.gif)
+
+En el GIF solo puede verse un cuarto de la esfera de la que hablábamos. Esto es porque el espacio RGB en el que nos movemos es un cubo. De hecho, se puede definir como:
+$$
+\mathbb{Z^3} \cap [0, 255]^3
+$$
+
+Así pues, no existen colores con coordenadas negativas o con valores mayores a 255. Este hecho también se puede observar para valores del radio mayor a 255 cuando la esfera empieza a ser cortada por los planos del cubo. Para diferentes colores de origen obtendremos cortes diferentes de la esfera.
+
+A mi criterio personal, los colores en la esfera de radios superiores a 150 ya presentan tonalidades demasiado azuladas y verdosas como para considerarlos rojo.
+
+**Observación:** El plano de colores que visualizamos en la primera imagen del post se corresponde con el plano izquierdo que podemos ver en en la animación.
+
+## Código
+
+Terminemos el post comentando el código que utilicé para realizar la esfera de la animación.
+
+Hay múltiples maneras de representar una esfera de radio r en el espacio tridimensional, pero en este caso utilizaremos una parametrización que nos hará las cosas muy sencillas. Podemos definir cada punto de la esfera como:
+$$
+x = x_0 + r\cos\theta\sin\varphi\\
+y = y_0 + r\sin\theta\sin\varphi\\
+z = z_0 + r\cos\varphi
+$$
+Donde el centro de la esfera es 
+$$(x_0, y_0, z_0)$$
+
+Y los ángulos toman los siguientes valores:
+$$\theta \in [0, 2\pi], \varphi \in [0, \pi]$$
+
+Intentemos pasar esto a código Python:
