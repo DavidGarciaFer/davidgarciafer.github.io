@@ -17,7 +17,7 @@ representar estas cantidades en base hexadecimal (0x00 y 0xFF respectivamente).
 Ejemplos:
 
 |                    Color                    |  Código entero  | Código hexadecimal | 
-|:-------------------------------------------:|:---------------:|:------------------:|
+|---------------------------------------------|-----------------|--------------------|
 | <span style="color:#000000">Negro</span>    |    (0, 0, 0)    |       #000000      |           
 |   <span style="color:#FF0000">Rojo</span>   |   (255, 0, 0)   |       #FF0000      |           
 |   <span style="color:#00FF00">Verde</span>  |   (0, 255, 0)   |       #00FF00      |           
