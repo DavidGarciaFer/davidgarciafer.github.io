@@ -9,7 +9,7 @@ Hace unos días, trabajando en un proyecto de **procesamiento de imágenes** en 
 -----
 ### Una nota sobre el modelo de color RGB
 
-GB *(Red, green and blue)* es un modo de codificar un color a través de la cantidad o intensidad de los colores primarios de la luz, estos son, rojo, verde y azul.
+RGB *(Red, green and blue)* es un modo de codificar un color a través de la cantidad o intensidad de los colores primarios de la luz, estos son, rojo, verde y azul.
 
 La intensidad de cada color se puede codificar de diferentes maneras, por ejemplo, la intensidad de cada una de las componentes puede medirse entre 0 y 255. Es usual
 representar estas cantidades en base hexadecimal (0x00 y 0xFF respectivamente).
