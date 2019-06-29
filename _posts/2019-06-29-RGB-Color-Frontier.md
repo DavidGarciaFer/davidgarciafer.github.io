@@ -8,11 +8,12 @@ Hace unos días, trabajando en un proyecto de **procesamiento de imágenes** en 
 
 -----
 ### Una nota sobre el modelo de color RGB
-
+<span style="color:#CCCCCC">
 RGB *(Red, green and blue)* es un modo de codificar un color a través de la cantidad o intensidad de los colores primarios de la luz, estos son, rojo, verde y azul.
 
 La intensidad de cada color se puede codificar de diferentes maneras, por ejemplo, la intensidad de cada una de las componentes puede medirse entre 0 y 255. Es usual
 representar estas cantidades en base hexadecimal (0x00 y 0xFF respectivamente).
+</span>
 
 Ejemplos:
 - <span style="color:#FF0000"> Rojo </span> = (255, 0, 0) = #FF0000
@@ -38,7 +39,7 @@ Como hemos explicado más arriba cada color RGB puede representarse a través de
 
 ----
 ### Distancia entre dos colores
-
+<span style="color:#CCCCCC">
 Podemos definir la distancia euclídea entre dos colores de la siguiente manera:
 
 $$
@@ -51,6 +52,7 @@ C_i = (R_i, G_i, B_i)
 $$
 
 Es decir, la longitud del segmento rectilíneo que los une.
+</span>
 
 -----
 
@@ -81,7 +83,7 @@ Terminemos el post comentando el código que utilicé para realizar la esfera de
 
 ----
 ### Fundamentos
-
+<span style="color:#CCCCCC">
 Hay múltiples maneras de representar una esfera de radio r en el espacio tridimensional, pero en este caso utilizaremos una parametrización que nos hará las cosas muy sencillas. Podemos definir cada punto de la esfera como:
 
 $$
@@ -99,6 +101,7 @@ $$
 $$
 , y el parámetro 
 $$\varphi \in [0, \pi]$$
+</span>
 
 -----
 
