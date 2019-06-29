@@ -78,6 +78,9 @@ A mi criterio personal, los colores en la esfera de radios superiores a 150 ya p
 
 Terminemos el post comentando el código que utilicé para realizar la esfera de la animación.
 
+----
+### Fundamentos
+
 Hay múltiples maneras de representar una esfera de radio r en el espacio tridimensional, pero en este caso utilizaremos una parametrización que nos hará las cosas muy sencillas. Podemos definir cada punto de la esfera como:
 
 $$
@@ -95,8 +98,9 @@ $$
 $$
 , y el parámetro 
 $$\varphi \in [0, \pi]$$
+----
 
-Intentemos pasar esto a código Python:
+Intentemos escribir todo esto en código Python:
 
 ```python
 import matplotlib.pyplot as plt
@@ -140,7 +144,7 @@ C = np.array([[int(r[i]), int(g[i]), int(b[i])] for i in range(len(r))])
 ```
 
 ```python
-# Plotting the graphic
+# Plotting the graph
 fig = plt.figure()
 ax = fig.add_subplot(111, projection='3d')
 ax.set_xlim3d(0, 255)
