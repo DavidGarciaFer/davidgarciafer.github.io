@@ -6,7 +6,7 @@ tags: [color, colores, rgb, distancia, esfera]
 ---
 Hace unos días, trabajando en un proyecto de **procesamiento de imágenes** en el que debía determinar el color de una fuente de luz tropecé con el siguiente problema: Dado un color **RGB**... *¿Cómo determinar si dicho color es una tonalidad de rojo? (o de cualquier otro color básico).*
 
-------
+-----
 ### Una nota sobre el modelo de color RGB
 
 RGB *(Red, green and blue)* es un modo de codificar un color a través de la cantidad o intensidad de los colores primarios de la luz, estos son, rojo, verde y azul.
@@ -19,7 +19,8 @@ Ejemplos:
 - <span style="color:#00FF00"> Verde </span> = (0, 255, 255) = #00FF00
 - <span style="color:#0000FF"> Azul </span> = (0, 0, 255) = #0000FF
 - <span style="color:#000000"> Negro </span> = (0, 0, 0) = #000000
-------
+
+-----
 
 ## Una primera aproximación al problema
 
@@ -98,7 +99,8 @@ $$
 $$
 , y el parámetro 
 $$\varphi \in [0, \pi]$$
-----
+
+-----
 
 Intentemos escribir todo esto en código Python:
 
