@@ -237,7 +237,7 @@ $$
 $$
 \theta
 $$
-. Generamos cada coordenada con la parametrización que vimos más arriba y por último **comprobamos que el punto sea válido**.** Cada coordenada o componente de un color se guardará en listas independientes, pero en la entrada de mismo índice.
+. Generamos cada coordenada con la parametrización que vimos más arriba y por último **comprobamos que el punto sea válido**. Cada coordenada o componente de un color se guardará en listas independientes, pero en la entrada de mismo índice.
 
 
 ```python
