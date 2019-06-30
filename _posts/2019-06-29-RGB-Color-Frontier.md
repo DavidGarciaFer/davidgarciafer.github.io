@@ -129,7 +129,7 @@ Como hemos explicado más arriba cada color RGB puede representarse a través de
 Podemos definir la distancia euclídea entre dos colores de la siguiente manera:
 
 $$
-d(C_1, C_2) = \sqrt{(R_1 - R_2)^2 + (B_1 - B_2)^2 + (G_1 - G_2)^2}
+d(C_1, C_2) = \sqrt{(R_1 - R_2)^2 + (G_1 - G_2)^2 + (B_1 - B_2)^2}
 $$
 
 Donde cada color se representa como:
@@ -162,7 +162,7 @@ A mi criterio personal, los colores en la esfera de radios superiores a 150 ya p
 
 **Observación:** El plano de colores que visualizamos en la primera imagen del post se corresponde con el plano izquierdo que podemos ver en en la animación.
 
-## Códificación
+## Codificación
 
 Terminemos el post comentando el código que utilicé para realizar la esfera de la animación.
 

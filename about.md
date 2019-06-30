@@ -4,12 +4,10 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Estudio un Doble Grado en Matemáticas e Ingeniería Informática en la Universidad Autónoma de Madrid. Actualmente realizo prácticas en GMV realizando tareas de computer vision y procesamiento de imágenes.
 
-### More Information
+### Contacto
 
-A place to include any other types of information that you'd like to include about yourself.
+Puedes escribirme a mi mail, para transmitirme cualquier comentario, duda, error o sugerencia.
 
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+[davidgar.fernandez@gmail.com](mailto:davidgar.fernandez@gmail.com)
