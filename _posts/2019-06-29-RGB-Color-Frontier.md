@@ -5,11 +5,11 @@ categories: [python, matplotlib, procesamiento de imagenes, matematicas]
 tags: [color, colores, rgb, distancia, esfera]
 ---
 
-**Contents**
+Hace unos días, trabajando en un proyecto de **procesamiento de imágenes** en el que debía determinar el color de una fuente de luz tropecé con el siguiente problema: Dado un color **RGB**... *¿Cómo determinar si dicho color es una tonalidad de rojo? (o de cualquier otro color básico).*
+
+**Contenidos**
 * TOC
 {:toc}
-
-Hace unos días, trabajando en un proyecto de **procesamiento de imágenes** en el que debía determinar el color de una fuente de luz tropecé con el siguiente problema: Dado un color **RGB**... *¿Cómo determinar si dicho color es una tonalidad de rojo? (o de cualquier otro color básico).*
 
 -----
 ### Una nota sobre el modelo de color RGB
@@ -106,6 +106,8 @@ Ejemplos:
     <td class="tg-3xi5"></td>
   </tr>
 </table>
+
+----
 
 ## Una primera aproximación al problema
 
