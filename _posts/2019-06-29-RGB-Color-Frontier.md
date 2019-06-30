@@ -16,20 +16,91 @@ representar estas cantidades en base hexadecimal (0x00 y 0xFF respectivamente).
 
 Ejemplos:
 
-|                    Color                    |  Código entero  | Código hexadecimal | 
-|---------------------------------------------|-----------------|--------------------|
-| <span style="color:#000000">Negro</span>    |    (0, 0, 0)    |       #000000      |           
-|   <span style="color:#FF0000">Rojo</span>   |   (255, 0, 0)   |       #FF0000      |           
-|   <span style="color:#00FF00">Verde</span>  |   (0, 255, 0)   |       #00FF00      |           
-|   <span style="color:#0000FF">Azul</span>   |   (0, 0, 255)   |       #0000FF      |           
-|  <span style="color:#FF8000">Naranja</span> |  (255, 128, 0)  |       #FF8000      |           
-| <span style="color:#FFFF00">Amarillo</span> |  (255, 255, 0)  |       #FFFF00      |           
-|  <span style="color:#994C00">Marrón</span>  |  (153, 76, 00)  |       #994C00      |           
-|  <span style="color:#990099">Morado</span>  |  (153, 0, 153)  |       #990099      |           
-|   <span style="color:#CCCCCC">Gris</span>   | (204, 204, 204) |       #CCCCCC      |           
-|                  Blanco                     | (255, 255, 255) |       #FFFFFF      |           
-
------
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-7zz7{background-color:#ffff00;border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-hs0z{background-color:#ff0000;border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-jqcb{background-color:#ff8000;border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-tu2r{background-color:#cccccc;border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-7bqb{background-color:#0000ff;border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-7btt{font-weight:bold;border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-ksrh{background-color:#000000;border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-ukt9{background-color:#00ff00;border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-lrim{background-color:#994c00;border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-517h{background-color:#990099;border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-3xi5{background-color:#ffffff;border-color:inherit;text-align:center;vertical-align:top}
+</style>
+<table class="tg">
+  <tr>
+    <th class="tg-7btt">Color</th>
+    <th class="tg-7btt">Código entero</th>
+    <th class="tg-7btt">Código hexadecimal</th>
+    <th class="tg-7btt">Apariencia</th>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">Negro</td>
+    <td class="tg-c3ow">(0, 0, 0)</td>
+    <td class="tg-c3ow">#000000</td>
+    <td class="tg-ksrh"></td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">Rojo</td>
+    <td class="tg-c3ow">(255, 0, 0)</td>
+    <td class="tg-c3ow">#FF0000</td>
+    <td class="tg-hs0z"></td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">Verde</td>
+    <td class="tg-c3ow">(0, 255, 0)</td>
+    <td class="tg-c3ow">#00FF00</td>
+    <td class="tg-ukt9"></td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">Azul</td>
+    <td class="tg-c3ow">(0, 0, 255)</td>
+    <td class="tg-c3ow">#0000FF</td>
+    <td class="tg-7bqb"></td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">Naranja</td>
+    <td class="tg-c3ow">(255, 128, 0)</td>
+    <td class="tg-c3ow">#FF8000</td>
+    <td class="tg-jqcb"></td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">Amarillo</td>
+    <td class="tg-c3ow">(255, 255, 0)</td>
+    <td class="tg-c3ow">#FFFF00</td>
+    <td class="tg-7zz7"></td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">Marrón</td>
+    <td class="tg-c3ow">(153, 76, 00)</td>
+    <td class="tg-c3ow">#994C00</td>
+    <td class="tg-lrim"></td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">Morado</td>
+    <td class="tg-c3ow">(153, 0, 153)</td>
+    <td class="tg-c3ow">#990099</td>
+    <td class="tg-517h"></td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">Gris</td>
+    <td class="tg-c3ow">(204, 204, 204)</td>
+    <td class="tg-c3ow">#CCCCCC</td>
+    <td class="tg-tu2r"></td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">Blanco</td>
+    <td class="tg-c3ow">(255, 255, 255)</td>
+    <td class="tg-c3ow">#FFFFFF</td>
+    <td class="tg-3xi5"></td>
+  </tr>
+</table>
 
 ## Una primera aproximación al problema
 
