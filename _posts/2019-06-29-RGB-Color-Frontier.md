@@ -129,7 +129,7 @@ Como hemos explicado más arriba cada color RGB puede representarse a través de
 Podemos definir la distancia euclídea entre dos colores de la siguiente manera:
 
 $$
-d(C_1, C_2) = \sqrt{(R_1 - R_2)^2 + (R_1 - R_2)^2 + (R_1 - R_2)^2}
+d(C_1, C_2) = \sqrt{(R_1 - R_2)^2 + (B_1 - B_2)^2 + (G_1 - G_2)^2}
 $$
 
 Donde cada color se representa como:
