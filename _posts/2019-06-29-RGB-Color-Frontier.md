@@ -4,6 +4,11 @@ title:  "Frontera de un color RGB"
 categories: [python, matplotlib, procesamiento de imagenes, matematicas]
 tags: [color, colores, rgb, distancia, esfera]
 ---
+
+**Contents**
+* TOC
+{:toc}
+
 Hace unos días, trabajando en un proyecto de **procesamiento de imágenes** en el que debía determinar el color de una fuente de luz tropecé con el siguiente problema: Dado un color **RGB**... *¿Cómo determinar si dicho color es una tonalidad de rojo? (o de cualquier otro color básico).*
 
 -----
@@ -162,7 +167,7 @@ Terminemos el post comentando el código que utilicé para realizar la esfera de
 ----
 
 ### Fundamentos
-</span>
+
 Hay múltiples maneras de representar una esfera de radio r en el espacio tridimensional, pero en este caso utilizaremos una parametrización que nos hará las cosas muy sencillas. Podemos definir cada punto de la esfera como:
 
 $$
