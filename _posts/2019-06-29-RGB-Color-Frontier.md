@@ -300,8 +300,8 @@ Si os interesa **crear un GIF animado** como el de este post os recomiendo que v
 
 ¡Un saludo y nos vemos en el siguiente post!
 
-[1] https://en.wikipedia.org/wiki/RGB_color_model
-[2] https://en.wikipedia.org/wiki/Hexadecimal
-[3] https://en.wikipedia.org/wiki/Euclidean_distance
-[4] https://ndres.me/post/matplotlib-animated-gifs-easily/
-[5] https://github.com/DavidGarciaFer/blog-code/tree/master/Color-Frontier
+[1]: https://en.wikipedia.org/wiki/RGB_color_model
+[2]: https://en.wikipedia.org/wiki/Hexadecimal
+[3]: https://en.wikipedia.org/wiki/Euclidean_distance
+[4]: https://ndres.me/post/matplotlib-animated-gifs-easily/
+[5]: https://github.com/DavidGarciaFer/blog-code/tree/master/Color-Frontier
