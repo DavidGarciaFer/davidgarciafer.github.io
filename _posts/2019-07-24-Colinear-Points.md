@@ -51,7 +51,7 @@ plt.show()
 ```
 
 
-![png](assets/Colinear-Points/output_7_0.png)
+![png](/assets/Colinear-Points/output_7_0.png)
 
 
 ## Método 1: Área del triángulo
@@ -93,7 +93,7 @@ plt.show()
 
 
 
-![png](assets/Colinear-Points/output_10_1.png)
+![png](/assets/Colinear-Points/output_10_1.png)
 
 
 ### Método 2: Agrupar por ángulo
@@ -167,7 +167,7 @@ plt.show()
 
 
 
-![png](assets/Colinear-Points/output_15_1.png)
+![png](/assets/Colinear-Points/output_15_1.png)
 
 
 ### Midiendo tiempos
@@ -201,5 +201,5 @@ plt.show()
 ```
 
 
-![png](assets/Colinear-Points/output_18_0.png)
+![png](/assets/Colinear-Points/output_18_0.png)
 
