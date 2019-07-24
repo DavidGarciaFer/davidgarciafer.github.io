@@ -1,6 +1,6 @@
 ---
 layout: post
-visible: 1
+published: false
 title:  "Encontrar puntos alineados"
 categories: [python, procesamiento de imagenes, matematicas]
 tags: [matplotlib, numpy, pyplot, colinear, puntos, point, linea, line, aligned, method]
