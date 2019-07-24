@@ -1,5 +1,6 @@
 ---
 layout: post
+visible: 1
 title:  "Encontrar puntos alineados"
 categories: [python, procesamiento de imagenes, matematicas]
 tags: [matplotlib, numpy, pyplot, colinear, puntos, point, linea, line, aligned, method]
@@ -94,8 +95,6 @@ _ = plt.scatter(x_values, y_values, c=colors, cmap='hsv', alpha=0.7)
 plt.show()
 ```
 
-    Total time: 0.09690332412719727 seconds
-
 
 
 ![png](/assets/Colinear-Points/output_10_1.png)
@@ -167,8 +166,6 @@ for i in range(0, len(x), 2):
 _ = plt.scatter(x_values, y_values, c=colors, cmap='hsv', alpha=0.7)
 plt.show()
 ```
-
-    Total time: 0.015508890151977539 seconds
 
 
 
