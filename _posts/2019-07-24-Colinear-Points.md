@@ -5,6 +5,11 @@ categories: [python, procesamiento de imagenes, matematicas]
 tags: [matplotlib, numpy, pyplot, colinear, puntos, point, linea, line, aligned, method]
 ---
 
+Aquí pondré una breve descripción.
+
+**Contenidos**
+* TOC
+{:toc}
 
 # Encontrando puntos alineados
 
