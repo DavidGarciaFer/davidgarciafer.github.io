@@ -6,7 +6,7 @@ categories: [python, procesamiento de imagenes, matematicas, deteccion de patron
 tags: [matplotlib, numpy, pyplot, colinear, puntos, point, linea, line, aligned, method, algebra, angle, slope, angulo, pendiente, triangle, triangulo, area, patron, pattern]
 ---
 
-Imaginemos que tenemos un mapa del cielo estrellado, y queremos encontrar una hipotética constelación para la cual sabemos que todas sus estrellas están alineadas formando una línea recta. En este post veremos y compararemos diferentes formas de automatizar esta búsqueda.
+Imaginemos que tenemos un mapa del cielo estrellado, y queremos encontrar una hipotética constelación para la cual sabemos que todas sus estrellas **están alineadas formando una línea recta**. En este post veremos y compararemos diferentes formas de automatizar esta búsqueda.
 
 **Contenidos**
 * TOC
@@ -14,20 +14,20 @@ Imaginemos que tenemos un mapa del cielo estrellado, y queremos encontrar una hi
 
 -----
 ### El análisis de imágenes
-La visión artificial o computer vision es una disciplina que intenta obtener datos a través de imágnes que puedan ser procesados por un ordenador. El procedimiento de análisis de imagen comprende diferentes etapas, algunas de ellas son:
+La [visión artificial][1] o [computer vision][2] es una disciplina que intenta obtener datos a través de imágnes que puedan ser procesados por un ordenador. El procedimiento de análisis de imagen comprende diferentes etapas, algunas de ellas son:
 
 * **Extracción** o adquisición de la imagen.
 * **Preprocesamiento**: Consiste en aplicar diferentes tratamientos a una imagen con el fin de eliminar ruido o realzar características interesantes para el posterior análisis.
 * **Segmentación**: Obtención de características útiles de la imagen.
 * **Reconocimiento**: Consiste en interpretar los datos obtenidos y darles un significado.
 
-Esta última tarea (generalmente la más sofisticada del proceso) es la que trataremos en el post, con un ejemplo muy sencillo, la obtención de los puntos alineados o colineares en una imagen.
+Esta última tarea (generalmente la más sofisticada del proceso) es la que trataremos en el post, con un ejemplo muy sencillo, la obtención de los puntos alineados o [colineares][3] en una imagen.
 
 -----
 
 ## Descripción del problema
 
-Supongamos que hemos obtenido un conjunto de puntos sobre una imagen (es decir, un conjunto coordenadas x y sus correspondientes coordenadas y). Nuestra tarea consisten en encontrar grupos de 3 o más puntos que estén alineados, es decir, puntos por los cuales pasa una misma recta.
+Supongamos que hemos obtenido un conjunto de puntos sobre una imagen (es decir, un conjunto coordenadas x y sus correspondientes coordenadas y). Nuestra tarea consiste en encontrar grupos de 3 o más puntos que estén alineados, es decir, puntos por los cuales pasa una misma recta.
 
 ## Método 1: Áreas de triángulos
 
@@ -35,7 +35,9 @@ Es claro que dos puntos siempre definen una única recta que pasa por ambos. ¿O
 
 Por tanto, para este primer método propuesto podemos escoger cada terna de puntos y hallar el área del triángulo que definen. Si el área es cero habremos encontrado tres puntos alineados. Podemos hacernos una idea de cómo funciona el proceso observando la siguiente animación:
 
-![Triangulos colineares](/assets/Colinear-Points/colinear.gif)
+<div style="text-align:center">
+<img source="/assets/Colinear-Points/colinear.gif"/>
+</div>
 
 En la sección de **Codificación** veremos cómo implementar este método en lenguaje *Python*.
 
@@ -115,7 +117,7 @@ plt.show()
 ![png](/assets/Colinear-Points/output_7_0.png)
 
 
-## Método 1: Área del triángulo
+### Método 1: Área del triángulo
 
 Implentamos el primer método que comentábamos más arriba. Podemos observar el triple bucle anidado que nos indica el coste $O(n^3)$ del que hablábamos. La función devolverá dos listas de coordenadas X y Y, que tomadas de dos a dos definirán los segmentos que formen las rectas buscadas.
 
@@ -299,3 +301,7 @@ plt.show()
 ![png](/assets/Colinear-Points/output_18_0.png)
 
 De esta forma estamos comprobando experimentalmente que el coste del método 1 es mucho mayor al del método 2 para tamaños grandes del conjunto de entrada. A partir de conjuntos de más de 50 puntos las diferencias entre ambos métodos son notables, superando en varios segundos los tiempos de ejecución.
+
+[1]: https://es.wikipedia.org/wiki/Visi%C3%B3n_artificial
+[2]: https://en.wikipedia.org/wiki/Computer_vision
+[3]: https://es.wikipedia.org/wiki/Colinealidad
