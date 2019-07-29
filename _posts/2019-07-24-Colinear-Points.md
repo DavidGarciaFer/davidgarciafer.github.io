@@ -35,15 +35,17 @@ Es claro que dos puntos siempre definen una única recta que pasa por ambos. ¿O
 
 Por tanto, para este primer método propuesto podemos escoger cada terna de puntos y hallar el área del triángulo que definen. Si el área es cero habremos encontrado tres puntos alineados. Podemos hacernos una idea de cómo funciona el proceso observando la siguiente animación:
 
-<div style="text-align:center">
-<img source="/assets/Colinear-Points/colinear.gif"/>
-</div>
+![Triangulos colineares](/assets/Colinear-Points/colinear.gif)
 
 En la sección de **Codificación** veremos cómo implementar este método en lenguaje *Python*.
 
 ### Coste teórico
 
-El algoritmo que acabamos de describir tiene un problema y es el elevado número de combinaciones posibles que debemos analizar. Para cada punto del conjunto inicial debemos probar con cada uno de los puntos restantes y para cada uno de ello con los restantes de nuevo. Es decir, si tenemos $n$ puntos el número de veces que calculemos el área será:
+El algoritmo que acabamos de describir tiene un problema y es el elevado número de combinaciones posibles que debemos analizar. Para cada punto del conjunto inicial debemos probar con cada uno de los puntos restantes y para cada uno de ellos con los restantes de nuevo. Es decir, si tenemos 
+$$n$$ 
+ puntos el número de veces que calcularemos el área será:
+
+
 $$
 Coste_{método 1} = n \times (n -1) \times (n - 2) = O(n^3)
 $$
