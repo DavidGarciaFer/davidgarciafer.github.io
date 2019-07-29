@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title:  "Encontrar puntos alineados"
 categories: [python, procesamiento de imagenes, matematicas, deteccion de patrones]
 tags: [matplotlib, numpy, pyplot, colinear, puntos, point, linea, line, aligned, method, algebra, angle, slope, angulo, pendiente, triangle, triangulo, area, patron, pattern]
