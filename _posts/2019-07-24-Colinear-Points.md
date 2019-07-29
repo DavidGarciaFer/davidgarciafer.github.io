@@ -335,7 +335,11 @@ plt.show()
 
 De esta forma estamos comprobando experimentalmente que el coste del método 1 es mucho mayor al del método 2 para tamaños grandes del conjunto de entrada. A partir de conjuntos de más de 50 puntos las diferencias entre ambos métodos son notables, superando en varios segundos los tiempos de ejecución.
 
+## Materiales
+Como en otras ocasiones os dejo el [enlace al repositorio de GitHub del blog][5], en él encontraréis el código explicado en el post y todo lo que he utilizado para realizar las animaciones.
+
 [1]: https://es.wikipedia.org/wiki/Visi%C3%B3n_artificial
 [2]: https://en.wikipedia.org/wiki/Computer_vision
 [3]: https://es.wikipedia.org/wiki/Colinealidad
 [4]: http://www.cs.princeton.edu/courses/archive/spring03/cs226/assignments/lines.html
+[5]: https://github.com/DavidGarciaFer/blog-code/tree/master/Colinear-Points
