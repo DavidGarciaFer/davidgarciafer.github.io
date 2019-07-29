@@ -50,13 +50,21 @@ $$
 Coste_{método 1} = n \times (n -1) \times (n - 2) = O(n^3)
 $$
 
-Obtenemos un coste cúbico el cual se dispara para valores muy grandes de $n$. En caso de que quisiéramos encontrar $p$ puntos alineados el coste sería $O(n^p)$, es decir, el algoritmo sería muy poco eficiente. Este resultado era de esperar, ya que estamos usando un método de fuerza bruta (probar todas las combinaciones posibles de puntos).
+Obtenemos un coste cúbico el cual se dispara para valores muy grandes de 
+$$n$$
+. En caso de que quisiéramos encontrar $p$ puntos alineados el coste sería 
+$$O(n^p)$$
+, es decir, el algoritmo sería muy poco eficiente. Este resultado era de esperar, ya que estamos usando un método de fuerza bruta (probar todas las combinaciones posibles de puntos).
 
 ## Método 2: Agrupar por ángulo
 
-Este interesante enlace de la universidad de Princeton plantea un método quizá no tan visual e intuitivo pero sin duda mucho más eficiente. 
+[Este interesante enlace][4] de la universidad de Princeton plantea un método quizá no tan visual e intuitivo pero sin duda mucho más eficiente. 
 
-Consiste en lo siguiente: escogemos un punto de referencia dentro del conjunto. Una vez escogido calculamos, para cada punto restante, el ángulo que forma el eje $x$ con la recta que pasa por este punto y el de referencia. Una vez disponemos de esta lísta de pares $(punto, ángulo)$ solo nos queda ordenadar esta lista en función del ángulo. Fácilmente podremos detectar los puntos alineados, ya que serán los grupos de dos o más puntos que compartan el mismo ángulo.
+Consiste en lo siguiente: escogemos un punto de referencia dentro del conjunto. Una vez escogido calculamos, para cada punto restante, el ángulo que forma el eje 
+$$x$$
+ con la recta que pasa por este punto y el de referencia. Una vez disponemos de esta lísta de pares 
+ $$(punto, ángulo)$$
+  solo nos queda ordenar esta lista en función del ángulo. Fácilmente podremos detectar los puntos alineados, ya que serán los grupos de dos o más puntos que compartan el mismo ángulo.
 
 Éste algoritmo se puede aplicar a cada uno de los puntos del conjunto para obtener todas las rectas generadas.
 
@@ -64,20 +72,26 @@ En la sección de **Codificación** veremos cómo implementar este método y có
 
 ### Coste teórico
 
-Para este algoritmo la parte que conlleva más esfuerzo es la ordenación de la lista de ángulos. Para ello hay diferentes algoritmos pero supondremos uno de coste $O(n\log n)$, que de hecho es el coste del algoritmo de ordenación de listas por defecto en *Python*.
+Para este algoritmo la parte que conlleva más esfuerzo es la ordenación de la lista de ángulos. Para ello hay diferentes algoritmos pero supondremos uno de coste 
+$$O(n\log n)$$
+, que de hecho es el coste del algoritmo de ordenación de listas por defecto en *Python*.
 
-Por tanto, aproximadamente el coste total sería: 
+Por tanto, aproximadamente el coste total sería:
+
+
 $$Coste_{método 2} = O(n^2\log n)$$
 
-Ya que hay que repetir el proceso $n$ veces, una por cada punto. Este método es mucho más eficiente en comparación con el anterior por fuerza bruta.
+Ya que hay que repetir el proceso 
+$$n$$
+ veces, una por cada punto. Este método es mucho más eficiente en comparación con el anterior por fuerza bruta.
 
 ## Codificación
 
 Implementaremos ambos métodos, comprobaremos sus resultados y por último compararemos sus tiempos de ejecución para diferentes tamaños del conjunto de puntos de entrada.
 
-En esta ocasión utilizaremos la librería *pyplot* de *matplotlib* para realizar las gráficas donde visualizaremos los puntos que generaremos y las rectas que encontremos. Para generar puntos aleatorios utilizaremos la librería *numpy*. Además utilizaremos el librería *time* para calcular los tiempos de ejecución.
+En esta ocasión utilizaremos la librería *pyplot* de *matplotlib* para realizar las gráficas donde visualizaremos los puntos que generaremos y las rectas que encontremos. Para generar puntos aleatorios utilizaremos la librería *numpy*. Además utilizaremos la librería *time* para calcular los tiempos de ejecución.
 
-La última línea sirve para agrandar el tamaño de los gráficos que generemos con *pyplot*.
+La última línea del siguiente bloque de código sirve para agrandar el tamaño de los gráficos que generemos con *pyplot*.
 
 ```python
 import time
@@ -121,7 +135,9 @@ plt.show()
 
 ### Método 1: Área del triángulo
 
-Implentamos el primer método que comentábamos más arriba. Podemos observar el triple bucle anidado que nos indica el coste $O(n^3)$ del que hablábamos. La función devolverá dos listas de coordenadas X y Y, que tomadas de dos a dos definirán los segmentos que formen las rectas buscadas.
+Implentamos el primer método que comentábamos más arriba. Podemos observar el triple bucle anidado que nos indica el coste 
+$$O(n^3)$$
+ del que hablábamos. La función devolverá dos listas de coordenadas X y Y, que tomadas de dos a dos definirán los segmentos que formen las rectas buscadas.
 
 ```python
 def colinear_1(x_values, y_values):
@@ -173,7 +189,18 @@ Intentemos definir el ángulo de manera rápida. Fijémonos en la siguiente figu
 
 ![triangle](/assets/Colinear-Points/triangle.png)
 
-Si queremos obtener el ángulo $\alpha$ formado por el segmento $PQ$ y el eje $X$ facilmente podemos hallar la proyección de $Q$ sobre la horizontal que pasa por $P$. Parece un poco lioso, pero no lo es. Si  $P = (p_1,p_2)$ y $Q = (q_1, q_2)$ entonces:
+Si queremos obtener el ángulo $\alpha$ formado por el segmento 
+$$PQ$$
+ y el eje 
+ $$X$$
+  facilmente podemos hallar la proyección de 
+  $$Q$$
+   sobre la horizontal que pasa por $$P$$
+   . Parece un poco lioso, pero no lo es. Si  $$P = (p_1,p_2)$$
+    y 
+    $$Q = (q_1, q_2)$$
+     entonces:
+
 $$
 Q_{proy} = (p_1, q_2)
 $$
@@ -184,7 +211,11 @@ $$
 \tan\alpha = \cfrac{|QQ_{proy}|}{|PQ_{proy}|} \Rightarrow \alpha = \arctan\cfrac{|QQ_{proy}|}{|PQ_{proy}|} 
 $$
 
-Donde $|QQ_{proy}| = |p_2- q_2|$ y $|PQ_{proy}| = |p_1 - q_1|$.
+Donde 
+$$|QQ_{proy}| = |p_2- q_2|$$
+ y 
+ $$|PQ_{proy}| = |p_1 - q_1|$$
+ .
 
 Si definimos así el ángulo tendremos que los cuatro ángulos representados en esta imagen tendrán el mismo valor:
 
@@ -307,3 +338,4 @@ De esta forma estamos comprobando experimentalmente que el coste del método 1 e
 [1]: https://es.wikipedia.org/wiki/Visi%C3%B3n_artificial
 [2]: https://en.wikipedia.org/wiki/Computer_vision
 [3]: https://es.wikipedia.org/wiki/Colinealidad
+[4]: http://www.cs.princeton.edu/courses/archive/spring03/cs226/assignments/lines.html
