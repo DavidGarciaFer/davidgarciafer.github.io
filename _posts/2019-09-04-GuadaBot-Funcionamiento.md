@@ -48,9 +48,11 @@ Este proceso se repite hasta que un solo municipio domina todos los pueblos de l
 
 ### Esquema del ataque
 
+Partimos de un tweet cualquiera, como por ejemplo: *Semana 162: Milmarcos ha conquistado Tortuera, territorio antes ocupado por Tortuera. Quedan 169 pueblos.*
+
 ![Esquema del ataque](/assets/GuadaBot-Funcionamiento/esquema.png)
 
-En este mapa se muestran los pueblos involucrados en un ataque de tres colores diferentes:
+En este mapa se muestran los pueblos involucrados en un ataque con tres colores diferentes:
 
 * Verde: En verde aparece el pueblo que ha sido conquistado en este turno (sólo uno por turno).
 * Azul: En azul se muestran los pueblos que domina el municipio que ha conquistado en este turno.
