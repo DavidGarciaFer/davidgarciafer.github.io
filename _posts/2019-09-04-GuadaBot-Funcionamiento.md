@@ -96,6 +96,8 @@ Puede darse la situación en la que un pueblo haya sido atacado pero que su muni
 
 Puedes activar la campana situada al lado del botón de *Seguir* para recibir notificaciones cada vez que se publique un tweet desde el bot.
 
+![Esquema del ataque](/assets/GuadaBot-Funcionamiento/bot_campana.png)
+
 ## Contacto
 
 Para cualquier comunicación sobre el bot puedes escribir un *Mensaje directo* en Twitter a la propia [cuenta del bot][1].
