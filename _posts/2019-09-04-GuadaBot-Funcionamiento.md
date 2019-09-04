@@ -17,6 +17,10 @@ worldwar, spanish, spain]
 
 El juego toma como participantes todos los términos municipales de la provincia de Guadalajara. Estos se pueden consultar en el siguiente [enlace][3]. Son un total de 288 localidades, a las que se ha añadido el término de Aldovera, perteneciente a Illana y declarado como despoblado, por necesidades técnicas.
 
+La lista completa de pueblos y su posición en el mapa puede verse en este tweet:
+
+<blockquote class="twitter-tweet"><p lang="es" dir="ltr">Estos son los municipios participantes de la <a href="https://twitter.com/hashtag/GuadalajaraWar?src=hash&amp;ref_src=twsrc%5Etfw">#GuadalajaraWar</a> <a href="https://t.co/YQrLAWvXdj">pic.twitter.com/YQrLAWvXdj</a></p>&mdash; GuadaWarBot (@BotGuada) <a href="https://twitter.com/BotGuada/status/1166799318793302016?ref_src=twsrc%5Etfw">August 28, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 ## Funcionamiento
 
 ### Consideraciones previas
