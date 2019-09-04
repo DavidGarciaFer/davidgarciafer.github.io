@@ -32,7 +32,7 @@ Para explicar el funcionamiento definiremos tres conceptos:
 Cada hora en punto el bot se activa y realiza los siguientes pasos:
 
 * Escoge un pueblo al azar.
-* Si el pueblo escogido ha sido conquistado previamente por otro municipio puede independizarse con una probabilidad de $$\cfrac{1}{24}$$.
+* Si el pueblo escogido ha sido conquistado previamente por otro municipio puede independizarse con una probabilidad de $$\frac{1}{24}$$.
 * En caso de que el pueblo no se independice se busca entre los pueblos dominados por un municipio diferente el pueblo más cercano al escogido y todos los pueblos cuyo pueblo más cercano es el escogido.
 * De estos pueblos se escoge uno al azar, que será atacado y conquistado por el municipio que controla el pueblo escogido.
 * Se generan las imágenes de los mapas y el mensaje del tweet.
@@ -43,6 +43,8 @@ Este proceso se repite hasta que un solo municipio domina todos los pueblos de l
 ## Mapas
 
 ### Esquema del ataque
+
+![Esquema del ataque](/assets/GuadaBot-Funcionamiento/esquema.png)
 
 En este mapa se muestran los pueblos involucrados en un ataque de tres colores diferentes:
 
@@ -56,10 +58,11 @@ El mapa general muestra un color único por cada municipio, a medida que un muni
 
 En el primer turno el mapa era:
 
+![Mapa inicial](/assets/GuadaBot-Funcionamiento/inicial.png)
 
 Mientras que en el turno 162 el mapa es:
 
-
+![Mapa mitad](/assets/GuadaBot-Funcionamiento/general.png)
 
 ## FAQ
 
@@ -78,6 +81,10 @@ A la vista de estos resultados las partidas suelen durar unos **dos meses y medi
 ### ¿Por qué no aparece mi pueblo?
 
 Si tu pueblo no aparece como participante es porque es una pedanía de algún otro municipio. Las pedanías no se han incluido por falta de recursos técnicos y porque la partida sería excesivamente larga.
+
+### ¿Por qué mi pueblo ha vuelto a atacar si fue conquistado?
+
+Puede darse la situación en la que un pueblo haya sido atacado pero que su municipio no haya sido derrotado. Por ejemplo, si Lupiana ha conquistado Horche aunque Chiloeches conquiste Lupiana (como pueblo) Lupiana sigue existiendo como municipio porque aún mantiene el dominio de Horche. En caso de que un municipio pierda todos los pueblos que poseía se especificará en el tweet que "ha sido derrotado" y ya no podrá volver a atacar a no ser que se independice.
 
 ### ¿Cómo recibir notificaciones?
 
